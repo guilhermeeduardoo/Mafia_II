@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(292.27deg, #262323 0%, rgba(13, 10, 10, 0.96) 54.78%, #333232 102.24%);
+    height: 100vh; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Vito {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 35%;
+}
+
+.main {
+    position: absolute;
+    left: 18%;
+    top: 2%;
+}
+
+.Data {
+    color: #C8242A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Linha {
+    width: 200px;
+    border: 1px solid #C8242A;
+    height: 0px;
+}
+
+.Comprar {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 15%;
+}
+
+.Borda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 334px;
+    height: 60px;
+    background-color: rgba(196, 196, 196, 0.17);
+    border-radius: 90px;
+    cursor: pointer;
+    position: absolute;
+    top: 130%;
+    left: 28%;
+}
+
+.Arts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 180%;
+    left: 15%;
+    width: 550px;
+}
+
+.Row {
+    width: 25px;
+    border: 1px solid #C8242A;
+    height: 0px;
+}
+
+.artwork {
+    cursor: pointer;
+    width: 22%;
+}
+
+.Borda:hover {
+    background-color: rgba(230, 230, 230, 0.17);
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #C8242A;
+    transition: 0.2s;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,.5);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mostrar {
+    display: flex;
+    animation: modal .3s;
+}
+
+.modal-container img {
+    width: 30%;
+}
